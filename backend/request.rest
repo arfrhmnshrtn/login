@@ -1,0 +1,29 @@
+GET http://localhost:3000/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjksIm5hbWUiOiJSYWhtYW4iLCJlbWFpbCI6InJhaG1hbkBnbWFpbC5jb20iLCJpYXQiOjE3MzUyNTI4NjgsImV4cCI6MTczNTI1Mjg4OH0.UXWrHctpg9k0W0F7UM5hckTu--yN8z2J7fO_SM1xm_I
+
+###
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "name": "Rahman",
+    "email": "rahman@gmail.com",
+    "password": "12345678",
+    "confirmPassword": "12345678"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email": "rahman@gmail.com",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:3000/token
+
+
+###
+DELETE http://localhost:3000/logout
